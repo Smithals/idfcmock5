@@ -1,0 +1,11 @@
+package com.ty.springbootbasics1.dto;
+
+import lombok.Data;
+
+@Data
+public class StudentDto {
+
+	private int std_id;
+	private String std_name;
+	private String std_emailid;
+}

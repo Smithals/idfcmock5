@@ -1,0 +1,13 @@
+package com.ty.springbootbasics1.userRepository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ty.springbootbasics1.dto.StudentDto;
+
+@Repository
+public interface UserRepository extends JpaRepository<StudentDto, Integer> {
+
+	void deleteInBatch(String emailid);
+
+}
